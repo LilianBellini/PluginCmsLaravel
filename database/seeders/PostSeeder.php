@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Lilian\PluginCmsLaravel\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Lilian\PluginCmsLaravel\Models\Post\Post;
