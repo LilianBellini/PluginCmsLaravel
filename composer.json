@@ -1,17 +1,21 @@
 {
     "name": "lilian/plugin_cms_laravel",
-    "type": "composer-plugin",
-    "license": "MIT",
+    "description": "Description of the Laravel package",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0|^9.0"
+    },
     "autoload": {
         "psr-4": {
             "Lilian\\PluginCmsLaravel\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Lilian BELLINI",
-            "email": "lilian.bellini@hotmail.fr"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lilian\\PluginCmsLaravel\\PluginCmsLaravelServiceProvider"
+            ]
         }
-    ],
-    "require": {}
+    }
 }
