@@ -2,9 +2,10 @@
 
 namespace Lilian\PluginCmsLaravel\Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Lilian\PluginCmsLaravel\Database\Seeders\TagSeeder;
+use Lilian\PluginCmsLaravel\Database\Seeders\CategorySeeder;
+use Lilian\PluginCmsLaravel\Database\Seeders\PostSeeder;
 use Illuminate\Database\Seeder;
-use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {

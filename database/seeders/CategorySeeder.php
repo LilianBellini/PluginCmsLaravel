@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use Lilian\PluginCmsLaravel\Models\Post\Category;
 use Lilian\PluginCmsLaravel\Models\Post\CategoryTranslation;
 
+
 class CategorySeeder extends Seeder
 {
     public function run()
