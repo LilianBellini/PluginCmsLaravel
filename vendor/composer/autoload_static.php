@@ -59,6 +59,7 @@ class ComposerStaticInit3afb31311fc4eee703bbda51c6ff1062
         'L' => 
         array (
             'Lilian\\Plugincmslaravel\\' => 24,
+            'Lilian\\PluginCmsLaravel\\Database\\Seeders\\' => 41,
             'Laravel\\Prompts\\' => 16,
         ),
         'I' => 
@@ -165,6 +166,10 @@ class ComposerStaticInit3afb31311fc4eee703bbda51c6ff1062
         'Lilian\\Plugincmslaravel\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Lilian\\PluginCmsLaravel\\Database\\Seeders\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/database/seeders',
         ),
         'Laravel\\Prompts\\' => 
         array (
