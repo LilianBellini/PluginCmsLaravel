@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lilian\\PluginCmsLaravel\\PluginCmsLaravelServiceProvider"
+                "Lilian\\Plugincmslaravel\\PluginCmsLaravelServiceProvider"
             ]
         }
     }
