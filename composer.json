@@ -1,0 +1,17 @@
+{
+    "name": "lilian/plugin_cms_laravel",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lilian\\PluginCmsLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lilian BELLINI",
+            "email": "lilian.bellini@hotmail.fr"
+        }
+    ],
+    "require": {}
+}
