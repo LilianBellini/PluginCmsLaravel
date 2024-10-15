@@ -20,6 +20,8 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->commands([
+            \Lilian\PluginCmsLaravel\Console\Commands\SeedDatabaseCommand::class,
+        ]);
     }
 }

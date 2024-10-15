@@ -3,7 +3,10 @@
     "description": "A CMS plugin for Laravel",
     "type": "library",
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "illuminate/support": "^11.27",
+        "illuminate/database": "^11.27",
+        "illuminate/console": "^11.27"
     },
     "autoload": {
         "psr-4": {
