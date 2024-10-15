@@ -7,7 +7,7 @@ use Lilian\PluginCmsLaravel\Controllers\Post\TagController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::middleware()->prefix('/editor')->group(function () {
+Route::prefix('/editor')->group(function () {
     // Routes pour les posts
     Route::resource('post', PostController::class)->except(['show']);
     Route::name('post.')->group( function (){
