@@ -1,18 +1,25 @@
 <?php
 
-namespace lilian\PluginCmsLaravel;
+namespace Lilian\Plugincmslaravel;
 
 use Illuminate\Support\ServiceProvider;
 
-class MonPackageServiceProvider extends ServiceProvider
+class PluginCmsLaravelServiceProvider extends ServiceProvider
 {
-    public function register()
-    {
-        // Enregistre les services de ton package ici
-    }
-
+    /**
+     * Bootstrap any application services.
+     */
     public function boot()
     {
-        // Place les publications de configuration, les migrations, etc.
+        // Charger les migrations
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+    }
+
+    /**
+     * Register any application services.
+     */
+    public function register()
+    {
+        //
     }
 }

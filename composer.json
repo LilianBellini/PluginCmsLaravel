@@ -1,6 +1,6 @@
 {
-    "name": "lilian/plugin_cms_laravel",
-    "description": "Description of the Laravel package",
+    "name": "lilian/plugincmslaravel",
+    "description": "A CMS plugin for Laravel",
     "type": "library",
     "require": {
         "php": "^7.3|^8.0",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lilian\\PluginCmsLaravel\\": "src/"
+            "Lilian\\Plugincmslaravel\\": "src/"
         }
     },
     "extra": {

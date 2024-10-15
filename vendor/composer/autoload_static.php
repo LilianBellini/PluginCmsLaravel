@@ -4,17 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb7b3fe4a489ebf6b083127205f6cce79
+class ComposerStaticInit3afb31311fc4eee703bbda51c6ff1062
 {
     public static $prefixLengthsPsr4 = array (
         'L' => 
         array (
-            'Lilian\\PluginCmsLaravel\\' => 24,
+            'Lilian\\Plugincmslaravel\\' => 24,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Lilian\\PluginCmsLaravel\\' => 
+        'Lilian\\Plugincmslaravel\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -27,9 +27,9 @@ class ComposerStaticInitb7b3fe4a489ebf6b083127205f6cce79
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb7b3fe4a489ebf6b083127205f6cce79::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb7b3fe4a489ebf6b083127205f6cce79::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb7b3fe4a489ebf6b083127205f6cce79::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3afb31311fc4eee703bbda51c6ff1062::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3afb31311fc4eee703bbda51c6ff1062::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3afb31311fc4eee703bbda51c6ff1062::$classMap;
 
         }, null, ClassLoader::class);
     }
