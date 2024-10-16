@@ -3,7 +3,7 @@
 namespace Lilian\PluginCmsLaravel\Database\Seeders;
 
 
-use Lilian\PluginCmsLaravel\Models\User;
+use App\Models\User;
 use Lilian\PluginCmsLaravel\Models\Setting;
 use Lilian\PluginCmsLaravel\Database\Seeders\TagSeeder;
 use Lilian\PluginCmsLaravel\Database\Seeders\CategorySeeder;
