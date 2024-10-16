@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
         }
         
 
-        // Setting::factory(1)->create();
+        Setting::factory(1)->create();
         
         $this->call([
             TagSeeder::class,
