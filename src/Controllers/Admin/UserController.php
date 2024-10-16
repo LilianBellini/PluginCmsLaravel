@@ -4,7 +4,7 @@ namespace Lilian\PluginCmsLaravel\Controllers\Admin;
 
 use Lilian\PluginCmsLaravel\Controllers\Controller;
 use Lilian\PluginCmsLaravel\Models\Role;
-use Lilian\PluginCmsLaravel\Models\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 

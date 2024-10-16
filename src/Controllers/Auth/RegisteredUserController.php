@@ -3,7 +3,7 @@
 namespace Lilian\PluginCmsLaravel\Controllers\Auth;
 
 use Lilian\PluginCmsLaravel\Controllers\Controller;
-use Lilian\PluginCmsLaravel\Models\User;
+use App\Models\User;
 use Lilian\PluginCmsLaravel\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;

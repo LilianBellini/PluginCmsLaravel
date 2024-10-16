@@ -8,7 +8,7 @@ use Lilian\PluginCmsLaravel\Models\Post\Category;
 use Lilian\PluginCmsLaravel\Models\Newsletter;
 use Lilian\PluginCmsLaravel\Models\Post\Post;
 use Lilian\PluginCmsLaravel\Models\Post\Tag;
-use Lilian\PluginCmsLaravel\Models\User;
+use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
