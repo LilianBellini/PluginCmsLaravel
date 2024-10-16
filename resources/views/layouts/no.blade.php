@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="robots" content="noindex, nofollow">
 
-	@vite(['resources/css/app.css', 'resources/js/app.js'])
+	@vite(['vendor/plugincmslaravel/resources/css/app.css', 'vendor/plugincmslaravel/resources/js/app.js'])
 
 
 
