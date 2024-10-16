@@ -3,29 +3,34 @@
 namespace Lilian\PluginCmsLaravel\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Lilian\PluginCmsLaravel\Models\Setting;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lilian\PluginCmsLaravel\Models\Setting>
- */
 class SettingFactory extends Factory
 {
     /**
-     * Define the model's default state.
+     * Le modèle correspondant à cette factory.
+     *
+     * @var string
+     */
+    protected $model = Setting::class;
+
+    /**
+     * Définissez l'état par défaut du modèle.
      *
      * @return array<string, mixed>
      */
     public function definition()
     {
         return [
-            'site_name' => fake()->word(),
-            'contact_email' => fake()->email(),
-            'description' => fake()->sentence(),
-            'about' => fake()->paragraph(1),
-            'copy_rights' => fake()->sentence(),
-            'url_fb' => fake()->url(),
-            'url_twitter' => fake()->url(),
-            'url_insta' => fake()->url(),
-            'url_linkedin' => fake()->url(),
+            'site_name' => $this->faker->word(),
+            'contact_email' => $this->faker->email(),
+            'description' => $this->faker->sentence(),
+            'about' => $this->faker->paragraph(1),
+            'copy_rights' => $this->faker->sentence(),
+            'url_fb' => $this->faker->url(),
+            'url_twitter' => $this->faker->url(),
+            'url_insta' => $this->faker->url(),
+            'url_linkedin' => $this->faker->url(),
         ];
     }
 }
