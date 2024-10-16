@@ -11,8 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lilian\\Plugincmslaravel\\": "src/",
-            "Lilian\\PluginCmsLaravel\\Database\\Seeders\\": "database/seeders/"
+            "Lilian\\Plugincmslaravel\\": "src/"
         }
     },
     "extra": {

@@ -12,7 +12,7 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
     public function boot()
     {
         // Charger les migrations
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->loadRoutesWithMiddleware();
     }
 
