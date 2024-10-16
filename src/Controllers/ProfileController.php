@@ -23,7 +23,7 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
-        return view('profile.edit', [
+        return view('plugincmslaravel::profile.edit', [
             'user' => $request->user(),
         ]);
     }
@@ -87,6 +87,6 @@ public function update(ProfileUpdateRequest $request): RedirectResponse
         $users = User::count();
         $newsletters = NewsLetter::count(); 
 
-        return view('dashboard', compact('categories', 'posts', 'tags', 'users', 'newsletters'));
+        return view('plugincmslaravel::dashboard', compact('categories', 'posts', 'tags', 'users', 'newsletters'));
     }
 }

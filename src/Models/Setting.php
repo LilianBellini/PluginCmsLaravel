@@ -22,6 +22,7 @@ class Setting extends Model
         'url_linkedin'
     ];
 
+    
     protected static function newFactory()
     {
         return SettingFactory::new();

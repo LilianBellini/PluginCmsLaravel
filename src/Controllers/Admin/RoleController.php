@@ -16,6 +16,6 @@ class RoleController extends Controller
     {
         $roles = Role::all();
 
-        return view('admin.role.index', compact('roles'));
+        return view('plugincmslaravel::admin.role.index', compact('roles'));
     }
 }

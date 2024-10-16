@@ -13,13 +13,13 @@ class PageController extends Controller
     {
         $pages = Page::with('user:id,name')->orderBy('id', 'desc')->paginate(15);
 
-        return view('post.page.index', compact('pages'));
+        return view('plugincmslaravel::post.page.index', compact('pages'));
     }
 
     public function create()
     {
 
-        return view('post.page.create');
+        return view('plugincmslaravel::post.page.create');
     }
 
     public function store(PageRequest $request)
@@ -39,7 +39,7 @@ class PageController extends Controller
     public function edit(Page $page)
     {
 
-        return view('post.page.edit', compact('page'));
+        return view('plugincmslaravel::post.page.edit', compact('page'));
     }
 
     public function destroy(Page $page)

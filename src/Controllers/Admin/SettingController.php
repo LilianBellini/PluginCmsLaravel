@@ -12,7 +12,7 @@ class SettingController extends Controller
     {
         $setting = Setting::first();
 
-        return view('admin.setting.index', compact('setting'));
+        return view('plugincmslaravel::admin.setting.index', compact('setting'));
     }
 
     public function update(UpdateSettingRequest $request, Setting $setting)

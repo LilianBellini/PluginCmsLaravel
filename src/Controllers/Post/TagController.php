@@ -17,7 +17,7 @@ class TagController extends Controller
     {
 
         $tags = Tag::with('posts')->latest()->paginate(15);
-        return view('post.tag.index', compact('tags'));
+        return view('plugincmslaravel::post.tag.index', compact('tags'));
     }
 
     /**
@@ -27,7 +27,7 @@ class TagController extends Controller
      */
     public function create()
     {
-        return view('post.tag.edit');
+        return view('plugincmslaravel::post.tag.edit');
     }
 
     /**
@@ -57,7 +57,7 @@ class TagController extends Controller
      */
     public function edit(Tag $tag)
     {
-        return view('post.tag.edit', compact('tag'));
+        return view('plugincmslaravel::post.tag.edit', compact('tag'));
     }
     
     public function show(Tag $tag){

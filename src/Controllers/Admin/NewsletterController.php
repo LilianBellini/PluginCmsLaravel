@@ -10,12 +10,12 @@ class NewsletterController extends Controller
     public function index()
     {
         $newsletters = Newsletter::latest()->paginate(15);
-        return view('admin.newsletters.index', compact('newsletters'));
+        return view('plugincmslaravel::admin.newsletters.index', compact('newsletters'));
     }
 
     public function create()
     {
-        return view('admin.newsletters.edit');
+        return view('plugincmslaravel::admin.newsletters.edit');
     }
 
     public function store(Request $request)
@@ -32,7 +32,7 @@ class NewsletterController extends Controller
     public function edit($id)
     {
         $newsletter = Newsletter::findOrFail($id);
-        return view('admin.newsletters.edit', compact('newsletter'));
+        return view('plugincmslaravel::admin.newsletters.edit', compact('newsletter'));
     }
 
     public function update(Request $request, $id)

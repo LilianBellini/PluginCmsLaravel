@@ -19,7 +19,7 @@ class UserController extends Controller
     {
         $users = User::with('role')->orderBy('id', 'desc')->paginate(15);
 
-        return view('admin.user.index', compact('users'));
+        return view('plugincmslaravel::admin.user.index', compact('users'));
     }
 
     /**
@@ -32,7 +32,7 @@ class UserController extends Controller
     {
         $roles = Role::all();
 
-        return view('admin.user.edit', compact('user', 'roles'));
+        return view('plugincmslaravel::admin.user.edit', compact('user', 'roles'));
     }
 
     /**

@@ -18,7 +18,7 @@ class CategoryController extends Controller
     {
         $categories = Category::with('user:id,name')->latest()->paginate(15);
 
-        return view('post.category.index', compact('categories'));
+        return view('plugincmslaravel::post.category.index', compact('categories'));
     }
 
     /**
@@ -28,7 +28,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('post.category.edit');
+        return view('plugincmslaravel::post.category.edit');
     }
 
     /**
@@ -74,7 +74,7 @@ class CategoryController extends Controller
         // Charger les traductions associées à cette catégorie
         $category->load('translations');
 
-        return view('post.category.edit', compact('category'));
+        return view('plugincmslaravel::post.category.edit', compact('category'));
     }
 
     /**
