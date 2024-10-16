@@ -11,7 +11,7 @@ class SeedDatabaseCommand extends Command
 
     public function handle()
     {
-        $this->call('db:seed', ['--class' => 'Lilian\\PluginCmsLaravel\\Database\\Seeders\\DatabaseSeeder']);
+        $this->call('db:seed', ['--class' => 'Lilian\PluginCmsLaravel\Database\Seeders']);
         $this->info('Database seeded with PluginCmsLaravel data.');
     }
 }
