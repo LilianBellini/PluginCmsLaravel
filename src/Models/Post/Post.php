@@ -4,7 +4,7 @@ namespace Lilian\PluginCmsLaravel\Models\Post;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\User; 
+use Lilian\PluginCmsLaravel\Models\User; 
 
 class Post extends Model
 {
@@ -61,11 +61,6 @@ class Post extends Model
     public function translations()
     {
         return $this->hasMany(PostTranslation::class);
-    }
-
-    public function comments()
-    {
-        return $this->morphMany(Comment::class, 'commentable');
     }
 
     public static function generateExcerpt($text)
