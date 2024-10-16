@@ -1,6 +1,6 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Factories;
+namespace Lilian\PluginCmsLaravel\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
