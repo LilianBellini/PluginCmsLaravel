@@ -3,7 +3,8 @@
     "description": "A CMS plugin for Laravel",
     "type": "library",
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "laravel/sanctum": "^3.3"
     },
     "require-dev": {
         "laravel/framework": "^10.0"
