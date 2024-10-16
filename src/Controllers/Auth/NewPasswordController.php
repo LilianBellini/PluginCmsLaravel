@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Lilian\PluginCmsLaravel\Controllers\Auth;
 
 use Lilian\PluginCmsLaravel\Controllers\Controller;
 use Illuminate\Auth\Events\PasswordReset;
