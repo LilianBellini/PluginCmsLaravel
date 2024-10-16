@@ -5,6 +5,10 @@ namespace Lilian\PluginCmsLaravel\Models ;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Lilian\Plugincmslaravel\Models\Post\Post ; 
+use Lilian\Plugincmslaravel\Models\Post\Category ; 
+use Lilian\Plugincmslaravel\Models\Post\Page ; 
+
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
@@ -79,10 +83,5 @@ class User extends Authenticatable
     public function getRole($role_name)
     {
         return self::role()->whereName($role_name)->exists();
-    }
-
-    public function comments()
-    {
-        return $this->hasMany(Comment::class);
     }
 }
