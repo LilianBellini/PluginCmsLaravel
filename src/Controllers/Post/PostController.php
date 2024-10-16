@@ -34,7 +34,7 @@ class PostController extends Controller
             }
         ])->latest()->paginate(15);
 
-        return view('post.index', compact('posts'));
+        return view('plugincmslaravel::post.index', compact('posts'));
     }
 
     /**
@@ -48,7 +48,7 @@ class PostController extends Controller
         $tags = Tag::with('translations')->get();
         $locales = config('app.langages');
 
-        return view('post.edit', compact('categories', 'tags', 'locales'));
+        return view('plugincmslaravel::post.edit', compact('categories', 'tags', 'locales'));
     }
 
     /**
@@ -105,7 +105,7 @@ class PostController extends Controller
         $tags = Tag::with('translations')->get();
         $locales = config('app.langages');
         
-        return view('post.edit', compact('post', 'categories', 'tags', 'locales'));
+        return view('plugincmslaravel::post.edit', compact('post', 'categories', 'tags', 'locales'));
     }
 
 
@@ -212,7 +212,7 @@ class PostController extends Controller
         return response()->json(['html' => $html]);
     }
 
-    return view('post.index', compact('posts'));
+    return view('plugincmslaravel::post.index', compact('posts'));
 }
 
 }

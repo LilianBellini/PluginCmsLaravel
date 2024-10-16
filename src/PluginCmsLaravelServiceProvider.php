@@ -13,6 +13,12 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
     {
         // Charger les migrations
         $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'plugincmslaravel');
+        // Permettre la publication des vues
+        $this->publishes([
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/plugincmslaravel'),
+        ], 'views');
+
         $this->loadRoutesWithMiddleware();
     }
 
