@@ -4,6 +4,8 @@ namespace Lilian\PluginCmsLaravel\Models ;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Lilian\PluginCmsLaravel\Database\Factories\SettingFactory;
+
 
 class Setting extends Model
 {
@@ -19,4 +21,9 @@ class Setting extends Model
         'url_twitter',
         'url_linkedin'
     ];
+
+    protected static function newFactory()
+    {
+        return SettingFactory::new();
+    }
 }
