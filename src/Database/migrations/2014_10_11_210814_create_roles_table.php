@@ -1,7 +1,6 @@
 <?php
 
-use Lilian\PluginCmsLaravel
-\Models\Role;
+use Lilian\PluginCmsLaravel\Models\Role;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

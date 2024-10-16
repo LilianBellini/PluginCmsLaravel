@@ -98,13 +98,13 @@
                                 <span class="menu-heading fw-bold text-uppercase fs-7">Outils métier</span>
                             </div>
                             <!--end:Menu content-->
-                            <a class="menu-link" href="{{ route('faq.index') }}">
+                            <!-- <a class="menu-link" href="{{ route('faq.index') }}">
                                 <i class="ki-duotone ki-archive fs-2 me-2">
                                     <span class="path1"></span>
                                     <span class="path2"></span>
                                 </i>
                                 <span class="menu-title">FAQ</span>
-                            </a>
+                            </a> -->
 
                         </div>
                     </div>
