@@ -12,7 +12,7 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
     public function boot()
     {
         // Charger les migrations
-        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
         $this->loadRoutesWithMiddleware();
     }
 
@@ -21,7 +21,7 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
         \Illuminate\Support\Facades\Route::middleware('web')
             ->namespace('Lilian\PluginCmsLaravel\Controllers')
             ->group(function () {
-                $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
+                $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
             });
     }
 
