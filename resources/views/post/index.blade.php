@@ -50,7 +50,7 @@
                             </thead>
                             <tbody id="posts-table">
                                 @foreach ($posts as $post)
-                                @include('plugincmslaravel::plugincmslaravel::post.lign' , $post)
+                                @include('plugincmslaravel::post.lign' , $post)
                                 @endforeach
                             </tbody>
                         </table>
