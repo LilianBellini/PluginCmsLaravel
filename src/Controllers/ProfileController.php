@@ -86,6 +86,7 @@ public function update(ProfileUpdateRequest $request): RedirectResponse
         $tags = Tag::count();
         $users = User::count();
         $newsletters = NewsLetter::count(); 
+        
 
         return view('plugincmslaravel::dashboard', compact('categories', 'posts', 'tags', 'users', 'newsletters'));
     }
