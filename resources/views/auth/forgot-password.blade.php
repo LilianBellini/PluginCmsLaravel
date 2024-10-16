@@ -1,4 +1,4 @@
-@extends('layouts.no')
+@extends('plugincmslaravel::layouts.no')
 
 @section('title', 'Mot de passe oublié')
 

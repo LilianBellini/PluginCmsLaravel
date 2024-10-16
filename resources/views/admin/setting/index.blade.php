@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('plugincmslaravel::layouts.app')
 
 @section('title', 'Paramètres du site')
 

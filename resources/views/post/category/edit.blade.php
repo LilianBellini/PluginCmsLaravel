@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('plugincmslaravel::layouts.app')
 
 @section('title', isset($category) ? 'Modifier la Catégorie' : 'Ajouter une Catégorie')
 
@@ -98,4 +98,4 @@
     </div>
 @endsection
 
-@include('post.category.script')
+@include('plugincmslaravel::post.category.script')

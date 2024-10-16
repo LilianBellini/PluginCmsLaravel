@@ -27,7 +27,7 @@
 		gtag('config', 'G-DEXFC3C67M');
 	</script>
 	<div class="container">
-		@include('layouts.alert')
+		@include('plugincmslaravel::layouts.alert')
 	</div>
 	@yield('content')
 

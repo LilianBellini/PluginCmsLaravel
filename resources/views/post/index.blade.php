@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('plugincmslaravel::layouts.app')
 
 @section('title', 'Gestion des Articles')
 
@@ -50,12 +50,12 @@
                             </thead>
                             <tbody id="posts-table">
                                 @foreach ($posts as $post)
-                                @include('plugincmslaravel::post.lign' , $post)
+                                @include('plugincmslaravel::plugincmslaravel::post.lign' , $post)
                                 @endforeach
                             </tbody>
                         </table>
                     </div>
-                    @include('layouts.pagination', ['items' => $posts])
+                    @include('plugincmslaravel::layouts.pagination', ['items' => $posts])
                 </div>
             </div>
         </div>

@@ -74,7 +74,7 @@
 					</div>
 					<!--end::Mobile logo-->
 					<!--begin::Header wrapper-->
-					@include('layouts.navigation')
+					@include('plugincmslaravel::layouts.navigation')
 					<!--end::Header wrapper-->
 				</div>
 				<!--end::Header container-->
@@ -83,15 +83,15 @@
 			<!--begin::Wrapper-->
 			<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
 				<!--begin::Sidebar-->
-				@include('layouts.sidebar')
+				@include('plugincmslaravel::layouts.sidebar')
 				<!--end::Sidebar-->
 
-				@include('layouts.alert')
+				@include('plugincmslaravel::layouts.alert')
 
 				<!--begin::Main-->
 				@yield('content')
 				<!--end:::Main-->
-				@include('layouts.footer')
+				@include('plugincmslaravel::layouts.footer')
 			</div>
 			<!--end::Wrapper-->
 		</div>

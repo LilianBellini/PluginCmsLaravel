@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('plugincmslaravel::layouts.app')
 
 @section('title', 'Gestion des Tags')
 
@@ -60,7 +60,7 @@
                             </tbody>
                         </table>
                     </div>
-                    @include('layouts.pagination', ['items' => $tags])
+                    @include('plugincmslaravel::layouts.pagination', ['items' => $tags])
                 </div>
             </div>
         </div>

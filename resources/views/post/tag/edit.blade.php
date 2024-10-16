@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('plugincmslaravel::layouts.app')
 
 @section('title', isset($tag) ? 'Modifier le Tag' : 'Ajouter un Tag')
 

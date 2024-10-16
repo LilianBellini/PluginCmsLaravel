@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('plugincmslaravel::layouts.app')
 
 @section('title', isset($post) ? 'Modifier un Article' : 'Ajouter un Article')
 
@@ -230,5 +230,5 @@
             </div>
         </div>
     </div>
-@include('post.script')
+@include('plugincmslaravel::post.script')
 @endsection

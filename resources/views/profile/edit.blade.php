@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('plugincmslaravel::layouts.app')
 
 @section('title', 'Édition du profil')
 
@@ -37,15 +37,15 @@
 
                 <!--begin::Additional Forms-->
                 <div class="mb-5">
-                    @include('profile.partials.update-profile-information-form')
+                    @include('plugincmslaravel::plugincmslaravel::profile.partials.update-profile-information-form')
                 </div>
 
                 <div class="mb-5">
-                    @include('profile.partials.update-password-form')
+                    @include('plugincmslaravel::profile.partials.update-password-form')
                 </div>
 
                 <div class="">
-                    @include('profile.partials.delete-user-form')
+                    @include('plugincmslaravel::profile.partials.delete-user-form')
                 </div>
 
             </div>

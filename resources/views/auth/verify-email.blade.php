@@ -1,4 +1,4 @@
-@extends('layouts.no')
+@extends('plugincmslaravel::layouts.no')
 
 @section('title', 'Vérification de l\'email')
 
