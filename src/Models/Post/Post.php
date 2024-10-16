@@ -2,10 +2,9 @@
 
 namespace Lilian\PluginCmsLaravel\Models\Post; 
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Casts\Attribute;
+use App\Models\User; 
 
 class Post extends Model
 {

@@ -5,7 +5,6 @@ use Lilian\PluginCmsLaravel\Controllers\Controller;
 use Lilian\PluginCmsLaravel\Requests\Post\PageRequest;
 use Illuminate\Http\Request;
 use Lilian\PluginCmsLaravel\Models\Post\Page;
-use Illuminate\Support\Str;
 
 class PageController extends Controller
 {

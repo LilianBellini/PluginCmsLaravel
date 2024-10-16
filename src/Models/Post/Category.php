@@ -2,6 +2,7 @@
 
 namespace Lilian\PluginCmsLaravel\Models\Post; 
 
+use App\Models\User; 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 

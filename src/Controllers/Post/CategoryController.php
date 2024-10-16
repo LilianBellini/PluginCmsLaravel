@@ -2,13 +2,10 @@
 
 namespace Lilian\PluginCmsLaravel\Controllers\Post;
 
-use App\Traits\SlugCreater;
 use Lilian\PluginCmsLaravel\Controllers\Controller;
 use Lilian\PluginCmsLaravel\Requests\Post\CategoryRequest;
-use Lilian\PluginCmsLaravel\Requests\Post\CategoryTranslationRequest;
 use Lilian\PluginCmsLaravel\Models\Post\Category;
 use Illuminate\Http\Request;
-use Symfony\Component\VarDumper\Caster\RedisCaster;
 
 class CategoryController extends Controller
 {

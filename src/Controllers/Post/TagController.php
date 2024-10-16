@@ -5,7 +5,6 @@ namespace Lilian\PluginCmsLaravel\Controllers\Post;
 use Lilian\PluginCmsLaravel\Controllers\Controller;
 use Lilian\PluginCmsLaravel\Requests\Post\TagRequest;
 use Lilian\PluginCmsLaravel\Models\Post\Tag;
-use Illuminate\Http\Request;
 
 class TagController extends Controller
 {
