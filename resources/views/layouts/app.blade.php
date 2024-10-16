@@ -18,7 +18,7 @@
 	<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
 	<link href="{{asset('assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
 	<link href="{{asset('assets/plugins/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
-	@vite(['vendor/lilian/plugincmslaravel/resources/css/app.css', 'vendor/lilian/plugincmslaravel/resources/js/app.js'])
+	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	<!--end::Global Stylesheets Bundle-->
 	<script>
 		// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
