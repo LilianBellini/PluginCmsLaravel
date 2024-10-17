@@ -106,7 +106,7 @@
                     <!--end:Menu bateaux-->
 
                     <!--start:Gestion utilisateur-->
-                    @admin()
+                    @admin
                     <div class="menu-item">
                         <!--begin:Menu item-->
                         <div class="menu-item pt-5">
@@ -154,7 +154,7 @@
 
 
                     <!--start:Gestion site-->
-                    @admin()
+                    @admin
                     <div class="menu-item">
                         <!--begin:Menu item-->
                         <div class="menu-item pt-5">

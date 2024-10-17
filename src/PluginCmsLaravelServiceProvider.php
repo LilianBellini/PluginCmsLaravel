@@ -25,13 +25,22 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
         $this->app['router']->aliasMiddleware('admin', RoleAdmin::class);
 
         // Enregistrer les directives personnalisées
-        Blade::directive('aditor', function () {
-            return "<?php if(auth()->check() && auth()->user()->hasRole('editor')): ?>";
+        Blade::directive('editor', function () {
+            return "<?php if (Auth::check() && (Auth::user()->role->id == 2 || Auth::user()->role->id == 1)): ?>";
         });
 
         Blade::directive('endeditor', function () {
             return "<?php endif; ?>";
         });
+
+        Blade::directive('admin', function () {
+            return "<?php if (Auth::check() && (Auth::user()->role->id == 1)): ?>";
+        });
+
+        Blade::directive('endadmin', function () {
+            return "<?php endif; ?>";
+        });
+
  
 
         $this->loadRoutesWithMiddleware();
