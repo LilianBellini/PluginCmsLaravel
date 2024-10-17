@@ -41,6 +41,15 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
             return "<?php endif; ?>";
         });
 
+
+        Blade::directive('guest', function () {
+            return "<?php if (Auth::check() && (Auth::user()->role->id == 3)): ?>";
+        });
+
+        Blade::directive('endguest', function () {
+            return "<?php endif; ?>";
+        });
+
  
 
         $this->loadRoutesWithMiddleware();
