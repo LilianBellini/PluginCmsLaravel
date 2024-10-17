@@ -3,6 +3,8 @@
 namespace Lilian\Plugincmslaravel;
 
 use Illuminate\Support\ServiceProvider;
+use Lilian\PluginCmsLaravel\Middleware\RoleAdmin;
+use Lilian\PluginCmsLaravel\Middleware\RoleEditor;
 
 class PluginCmsLaravelServiceProvider extends ServiceProvider
 {
@@ -18,7 +20,9 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/plugincmslaravel'),
         ], 'views');
-        
+        $this->app['router']->aliasMiddleware('editor', RoleEditor::class);
+        $this->app['router']->aliasMiddleware('admin', RoleAdmin::class);
+ 
 
         $this->loadRoutesWithMiddleware();
     }
