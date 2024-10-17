@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Nico',
                 'role_id' => 1,
                 'email' => 'nico@systemin.fr', // Remplis ce champ avec l'adresse email souhaitée
-                'password' => bcrypt('nicon@systemin.fr'), // Assure-toi de définir un mot de passe sécurisé
+                'password' => bcrypt('nico@systemin.fr'), // Assure-toi de définir un mot de passe sécurisé
             ]);
         }
         

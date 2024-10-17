@@ -5,6 +5,7 @@ namespace Lilian\Plugincmslaravel;
 use Illuminate\Support\ServiceProvider;
 use Lilian\PluginCmsLaravel\Middleware\RoleAdmin;
 use Lilian\PluginCmsLaravel\Middleware\RoleEditor;
+use Illuminate\Support\Facades\Blade;
 
 class PluginCmsLaravelServiceProvider extends ServiceProvider
 {
@@ -22,6 +23,15 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
         ], 'views');
         $this->app['router']->aliasMiddleware('editor', RoleEditor::class);
         $this->app['router']->aliasMiddleware('admin', RoleAdmin::class);
+
+        // Enregistrer les directives personnalisées
+        Blade::directive('aditor', function () {
+            return "<?php if(auth()->check() && auth()->user()->hasRole('editor')): ?>";
+        });
+
+        Blade::directive('endeditor', function () {
+            return "<?php endif; ?>";
+        });
  
 
         $this->loadRoutesWithMiddleware();
