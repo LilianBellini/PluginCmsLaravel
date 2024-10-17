@@ -40,7 +40,7 @@ public function update(ProfileUpdateRequest $request): RedirectResponse
         if ($user->avatar != null) {
             Storage::delete($user->avatar);
         }
-        $avatarPath = $request->file('avatar')->store('images/profiles');
+        $avatarPath = $request->file('avatar')->store('images/profiles', 'public');
         $data['avatar'] = $avatarPath;
     }
 

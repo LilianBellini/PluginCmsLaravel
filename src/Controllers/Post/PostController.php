@@ -62,7 +62,7 @@ class PostController extends Controller
         $post_data = $request->safe()->except('image');
 
         if ($request->hasfile('image')) {
-            $get_file = $request->file('image')->store('images/posts');
+            $get_file = $request->file('image')->store('images/posts', 'public');
             $post_data['image'] = $get_file;
         }
 
@@ -124,7 +124,7 @@ class PostController extends Controller
 
         if ($request->hasfile('image')) {
             Storage::delete($post->image);
-            $get_file = $request->file('image')->store('images/posts');
+            $get_file = $request->file('image')->store('images/posts', 'public');
             $post_data['image'] = $get_file;
         }
 
