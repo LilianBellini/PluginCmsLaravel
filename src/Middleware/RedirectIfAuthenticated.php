@@ -2,7 +2,7 @@
 
 namespace  Lilian\PluginCmsLaravel\Middleware;
 
-use App\Providers\RouteServiceProvider;
+use Lilian\PluginCmsLaravel\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

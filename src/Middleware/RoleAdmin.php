@@ -19,6 +19,6 @@ class RoleAdmin
         if (Auth::check() && Auth::user()->role->id == 1) {
             return $next($request);
         }
-        return redirect()->route('admin.index')->withErrors('Vous n\'êtes pas autorisé à accéder à cette section.');;
+        return redirect()->route('plugincmslaravel::admin.index')->withErrors('Vous n\'êtes pas autorisé à accéder à cette section.');;
     }
 }

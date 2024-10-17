@@ -20,6 +20,6 @@ class RoleEditor
             return $next($request);
         }
 
-        return redirect()->route('admin.account.index')->withErrors('Accès non autorisé');
+        return redirect()->route('plugincmslaravel::admin.account.index')->withErrors('Accès non autorisé');
     }
 }
