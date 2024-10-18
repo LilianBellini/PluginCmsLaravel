@@ -37,7 +37,7 @@
 
                 <!--begin::Additional Forms-->
                 <div class="mb-5">
-                    @include('plugincmslaravel::plugincmslaravel::profile.partials.update-profile-information-form')
+                    @include('plugincmslaravel::profile.partials.update-profile-information-form')
                 </div>
 
                 <div class="mb-5">
