@@ -21,9 +21,21 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/plugincmslaravel'),
         ], 'views');
-        $this->app['router']->aliasMiddleware('editor', RoleEditor::class);
-        $this->app['router']->aliasMiddleware('admin', RoleAdmin::class);
 
+
+        $this->loadMiddleware(); 
+        $this->loadBladeDirective();
+        $this->loadRoutesWithMiddleware();
+    }
+
+    public function loadMiddleware(){
+        $router = $this->app['router'] ;  
+        $router->aliasMiddleware('editor', RoleEditor::class);
+        $router->aliasMiddleware('admin', RoleAdmin::class);
+    }
+
+    public function loadBladeDirective()
+    {
         // Enregistrer les directives personnalisées
         Blade::directive('editor', function () {
             return "<?php if (Auth::check() && (Auth::user()->role->id == 2 || Auth::user()->role->id == 1)): ?>";
@@ -49,10 +61,6 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
         Blade::directive('endguest', function () {
             return "<?php endif; ?>";
         });
-
- 
-
-        $this->loadRoutesWithMiddleware();
     }
 
     protected function loadRoutesWithMiddleware()
