@@ -8,9 +8,10 @@
 	<title>@yield('title') | Falcon Racing Europe</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="shortcut icon" href="{{asset('assets/media/logos/favicon.png')}}" />
+	<link rel="shortcut icon" href="{{asset('content/assets/media/logos/favicon.png')}}" />
 	<!--begin::Fonts(mandatory for all pages)-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700" />
+	<link href="{{asset('content/assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
 	<!--end::Fonts-->
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	<!--end::Global Stylesheets Bundle-->
@@ -62,8 +63,8 @@
 					<!--begin::Mobile logo-->
 					<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
 						<a href="index.html" class="d-lg-none">
-							<img alt="Logo" src="{{asset('assets/media/logos/default.svg')}}" class="theme-light-show h-30px" />
-							<img alt="Logo" src="{{asset('assets/media/logos/default-dark.svg')}}" class="theme-dark-show h-30px" />
+							<img alt="Logo" src="{{asset('content/assets/media/logos/default.svg')}}" class="theme-light-show h-30px" />
+							<img alt="Logo" src="{{asset('content/assets/media/logos/default-dark.svg')}}" class="theme-dark-show h-30px" />
 						</a>
 					</div>
 					<!--end::Mobile logo-->
@@ -91,32 +92,11 @@
 		</div>
 		<!--end::Page-->
 	</div>
-	<script>
-		var hostUrl = "assets/";
-	</script>
+
 	<!--begin::Global Javascript Bundle(mandatory for all pages)-->
-	<!-- <script src="{{asset('assets/plugins/global/plugins.bundle.js')}}"></script>
-	<script src="{{asset('assets/js/scripts.bundle.js')}}"></script> -->
-	<!--end::Global Javascript Bundle-->
-	<!--begin::Vendors Javascript(used for this page only)-->
-	<!-- <script src="{{asset('assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
-	<script src="{{asset('assets/plugins/custom/vis-timeline/vis-timeline.bundle.js')}}"></script>
-	<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-	<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-	<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-	<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-	<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script> -->
-	<!--end::Vendors Javascript-->
-	<!--begin::Custom Javascript(used for this page only)-->
-	<!-- <script src="{{asset('assets/js/widgets.bundle.js')}}"></script>
-	<script src="{{asset('assets/js/custom/apps/chat/chat.js')}}"></script>
-	<script src="{{asset('assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
-	<script src="{{asset('assets/js/custom/utilities/modals/create-campaign.js')}}"></script>
-	<script src="{{asset('assets/js/custom/utilities/modals/top-up-wallet.js')}}"></script>
-	<script src="{{asset('assets/js/custom/utilities/modals/create-account.js')}}"></script>
-	<script src="{{asset('assets/js/custom/utilities/modals/users-search.js')}}"></script>
-	<script src="{{asset('assets/plugins/custom/datatables/datatables.bundle.js')}}"></script> -->
-	<!--begin::Custom Javascript(used for this page only)-->
+	<script src="{{asset('content/assets/plugins/global/plugins.bundle.js')}}"></script>
+	<script src="{{asset('content/assets/js/scripts.bundle.js')}}"></script>
+
 </body>
 <!--end::Body-->
 
