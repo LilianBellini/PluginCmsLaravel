@@ -18171,14 +18171,6 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown
   font-style: normal;
 }
 
-@font-face {
-  font-family: "keenicons-outline";
-  src: url("fonts/keenicons/keenicons-outline.eot?fzo4bm");
-  src: url("fonts/keenicons/keenicons-outline.eot?fzo4bm#iefix") format("embedded-opentype"), url("fonts/keenicons/keenicons-outline.ttf?fzo4bm") format("truetype"), url("fonts/keenicons/keenicons-outline.woff?fzo4bm") format("woff"), url("fonts/keenicons/keenicons-outline.svg?fzo4bm#keenicons-outline") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 .ki-outline {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "keenicons-outline" !important;
@@ -20485,14 +20477,6 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown
   content: "\eb3c";
 }
 
-@font-face {
-  font-family: "keenicons-solid";
-  src: url("fonts/keenicons/keenicons-solid.eot?812fv7");
-  src: url("fonts/keenicons/keenicons-solid.eot?812fv7#iefix") format("embedded-opentype"), url("fonts/keenicons/keenicons-solid.ttf?812fv7") format("truetype"), url("fonts/keenicons/keenicons-solid.woff?812fv7") format("woff"), url("fonts/keenicons/keenicons-solid.svg?812fv7#keenicons-solid") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 .ki-solid {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "keenicons-solid" !important;
@@ -31437,16 +31421,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/*!
- * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
- * Copyright 2019-2024 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
- */
-@font-face {
-  font-display: block;
-  font-family: "bootstrap-icons";
-  src: url("fonts/bootstrap-icons/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"), url("fonts/bootstrap-icons/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
-}
+
 .bi::before,
 [class^=bi-]::before,
 [class*=" bi-"]::before {
