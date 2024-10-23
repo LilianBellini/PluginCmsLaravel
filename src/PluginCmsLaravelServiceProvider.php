@@ -23,13 +23,14 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
         ], 'views');
 
 
-        $this->loadMiddleware(); 
+        $this->loadMiddleware();
         $this->loadBladeDirective();
         $this->loadRoutesWithMiddleware();
     }
 
-    public function loadMiddleware(){
-        $router = $this->app['router'] ;  
+    public function loadMiddleware()
+    {
+        $router = $this->app['router'];
         $router->aliasMiddleware('editor', RoleEditor::class);
         $router->aliasMiddleware('admin', RoleAdmin::class);
     }
@@ -70,6 +71,7 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
             });
+        $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
     }
 
     /**
