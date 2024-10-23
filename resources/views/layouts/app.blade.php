@@ -8,10 +8,10 @@
 	<title>@yield('title') | Falcon Racing Europe</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="shortcut icon" href="{{asset('content/assets/media/logos/favicon.png')}}" />
+	<link rel="shortcut icon" href="{{asset('assets/cms/media/logo/favicon.png')}}" />
 	<!--begin::Fonts(mandatory for all pages)-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700" />
-	<link href="{{asset('content/assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
+	<link href="{{asset('assets/cms/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
 	<!--end::Fonts-->
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	<!--end::Global Stylesheets Bundle-->
@@ -63,8 +63,8 @@
 					<!--begin::Mobile logo-->
 					<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
 						<a href="index.html" class="d-lg-none">
-							<img alt="Logo" src="{{asset('content/assets/media/logos/default.svg')}}" class="theme-light-show h-30px" />
-							<img alt="Logo" src="{{asset('content/assets/media/logos/default-dark.svg')}}" class="theme-dark-show h-30px" />
+							<img alt="Logo" src="{{asset('assets/cms/media/logo/default.svg')}}" class="theme-light-show h-30px" />
+							<img alt="Logo" src="{{asset('assets/cms/media/logo/default_white.svg')}}" class="theme-dark-show h-30px" />
 						</a>
 					</div>
 					<!--end::Mobile logo-->
@@ -94,8 +94,8 @@
 	</div>
 
 	<!--begin::Global Javascript Bundle(mandatory for all pages)-->
-	<script src="{{asset('content/assets/plugins/global/plugins.bundle.js')}}"></script>
-	<script src="{{asset('content/assets/js/scripts.bundle.js')}}"></script>
+	<script src="{{asset('assets/cms/plugins/global/plugins.bundle.js')}}"></script>
+	<script src="{{asset('assets/cms/js/scripts.bundle.js')}}"></script>
 
 </body>
 <!--end::Body-->

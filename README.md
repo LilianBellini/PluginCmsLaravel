@@ -13,6 +13,7 @@ composer require lilian/plugincmslaravel
 php artisan migrate
 php artisan plugin-cms:seed
 npm i bootstrap-icons
+cp -r vendor/lilian/plugincmslaravel/assets/content public 
 
 dans le modele app/Models/User.php : 
 
@@ -22,5 +23,19 @@ class User extends Authenticatable
 {
     use UserTrait; // Inclusion du trait
 
+    et dans le fillable: 
+        'role_id',
+        'avatar',
+        'news_letter',
+        'bio',
+        'url_fb',
+        'url_insta',
+        'url_twitter',
+        'url_linkedin'
+
     // Le reste de ton modèle User
 }
+
+dans config/app.php, ajouter
+
+    'langages' => ['fr', 'en'],
