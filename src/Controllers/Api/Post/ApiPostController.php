@@ -17,7 +17,7 @@ class ApiPostController extends Controller
         $locale = $request->route('locale') ?? app()->getLocale();
 
         $posts = Post::with([
-            'user:id,name',
+            'user',
             'category.translations' => function ($query) use ($locale) {
                 $query->where('locale', $locale);
             },
@@ -38,7 +38,7 @@ class ApiPostController extends Controller
     public function show(Request $request, $locale, $id)
     {
         $post = Post::with([
-            'user:id,name',
+            'user',
             'category.translations' => function ($query) use ($locale) {
                 $query->where('locale', $locale);
             },
@@ -48,7 +48,6 @@ class ApiPostController extends Controller
             'translations' => function ($query) use ($locale) {
                 $query->where('locale', $locale);
             },
-            'comments.user'
         ])
             ->whereId($id)
             ->whereStatus(true)

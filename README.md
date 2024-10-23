@@ -27,12 +27,7 @@ class User extends Authenticatable
     et dans le fillable: 
         'role_id',
         'avatar',
-        'news_letter',
         'bio',
-        'url_fb',
-        'url_insta',
-        'url_twitter',
-        'url_linkedin'
 
     // Le reste de ton modèle User
 }

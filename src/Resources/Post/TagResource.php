@@ -14,7 +14,6 @@ class TagResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $translation ? $translation->name : null,
-            'slug' => $translation ? $translation->slug : null,
         ];
     }
 }

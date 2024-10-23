@@ -2,6 +2,7 @@
 
 namespace Lilian\PluginCmsLaravel\Resources;
 
+use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class UserResource extends JsonResource
@@ -14,6 +15,8 @@ class UserResource extends JsonResource
      */
     public function toArray($request)
     {
+        $locale = $request->route('locale') ?? app()->getLocale();
+        Carbon::setLocale($locale);
         // return parent::toArray($request);
         return [
             'id' => $this->id,
@@ -21,11 +24,7 @@ class UserResource extends JsonResource
             'email' => $this->email,
             'bio' => $this->bio,
             'avatar' => asset("storage/" . $this->avatar),
-            'url_fb' => $this->url_fb,
-            'url_insta' => $this->url_insta,
-            'url_twitter' => $this->url_twitter,
-            'url_linkedin' => $this->url_linkedin,
-            'join_date' => $this->created_at
+            'created_at' => Carbon::parse($this->created_at)->translatedFormat('j F Y'),
         ];
     }
 }
