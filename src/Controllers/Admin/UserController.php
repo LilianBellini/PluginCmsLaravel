@@ -67,4 +67,31 @@ class UserController extends Controller
 
         return back()->with('success', "Utilisateur a été supprimé");
     }
+
+
+    public function search(Request $request)
+    {
+        $searched_text = $request->input('query');
+
+        $users = User::query()
+            ->with('role') // Charger la relation des rôles
+            ->where(function ($query) use ($searched_text) {
+                $query->where('name', 'LIKE', "%{$searched_text}%")
+                    ->orWhere('email', 'LIKE', "%{$searched_text}%");
+            })
+            ->orderBy('id', 'desc')
+            ->paginate(15);
+
+        if ($request->ajax()) {
+            $html = '';
+
+            foreach ($users as $user) {
+                $html .= view('plugincmslaravel::admin.user.lign', compact('user'))->render();
+            }
+
+            return response()->json(['html' => $html]);
+        }
+
+        return view('plugincmslaravel::admin.user.index', compact('users'));
+    }
 }

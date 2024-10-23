@@ -1,4 +1,5 @@
 <?php
+
 namespace Lilian\PluginCmsLaravel\Controllers\Post;
 
 use Lilian\PluginCmsLaravel\Controllers\Controller;
@@ -73,9 +74,9 @@ class PostController extends Controller
         }
 
         foreach ($request['translations'] as $locale => $translationData) {
-            $translationData['content'] = mb_convert_encoding($translationData['content'], 'UTF-8', 'UTF-8') ;  
+            $translationData['content'] = mb_convert_encoding($translationData['content'], 'UTF-8', 'UTF-8');
             $translationData['excerpt'] = htmlspecialchars(PostTranslation::generateExcerpt($translationData['content']));
-           
+
             try {
                 PostTranslation::create([
                     'post_id' => $post->id,
@@ -104,7 +105,7 @@ class PostController extends Controller
         $categories = Category::with('translations')->get();
         $tags = Tag::with('translations')->get();
         $locales = config('app.langages');
-        
+
         return view('plugincmslaravel::post.edit', compact('post', 'categories', 'tags', 'locales'));
     }
 
@@ -133,7 +134,7 @@ class PostController extends Controller
 
         foreach ($request['translations'] as $locale => $translationData) {
             $postTranslation = $post->translations()->where('locale', $locale)->first();
-            $translationData['content'] = mb_convert_encoding($translationData['content'], 'UTF-8', 'UTF-8') ;  
+            $translationData['content'] = mb_convert_encoding($translationData['content'], 'UTF-8', 'UTF-8');
             $translationData['excerpt'] = htmlspecialchars(PostTranslation::generateExcerpt($translationData['content']));
             if ($postTranslation) {
                 $postTranslation->update($translationData);
@@ -177,42 +178,41 @@ class PostController extends Controller
     }
 
     public function search(Request $request)
-{
-    $searched_text = $request->input('query');
-    $locale = app()->getLocale(); // Récupérer la langue actuelle
+    {
+        $searched_text = $request->input('query');
+        $locale = app()->getLocale(); // Récupérer la langue actuelle
 
-    $posts = Post::query()
-        ->with([
-            'category.translations' => function ($query) use ($locale) {
-                $query->where('locale', $locale);
-            },
-            'tags.translations' => function ($query) use ($locale) {
-                $query->where('locale', $locale);
-            },
-            'translations' => function ($query) use ($locale) {
-                $query->where('locale', $locale);
+        $posts = Post::query()
+            ->with([
+                'category.translations' => function ($query) use ($locale) {
+                    $query->where('locale', $locale);
+                },
+                'tags.translations' => function ($query) use ($locale) {
+                    $query->where('locale', $locale);
+                },
+                'translations' => function ($query) use ($locale) {
+                    $query->where('locale', $locale);
+                }
+            ])
+            ->whereHas('translations', function ($query) use ($searched_text, $locale) {
+                $query->where('locale', $locale)
+                    ->where(function ($query) use ($searched_text) {
+                        $query->where('title', 'LIKE', "%{$searched_text}%")
+                            ->orWhere('content', 'LIKE', "%{$searched_text}%");
+                    });
+            })
+            ->orderBy('created_at', 'desc')
+            ->paginate(20);
+        if ($request->ajax()) {
+            $html = '';
+
+            foreach ($posts as $post) {
+
+                $html .= view('plugincmslaravel::post.lign', compact('post'))->render();
             }
-        ])
-        ->whereHas('translations', function ($query) use ($searched_text, $locale) {
-            $query->where('locale', $locale)
-                ->where(function ($query) use ($searched_text) {
-                    $query->where('title', 'LIKE', "%{$searched_text}%")
-                          ->orWhere('content', 'LIKE', "%{$searched_text}%");
-                });
-        })
-        ->orderBy('created_at', 'desc')
-        ->paginate(20);
-    if ($request->ajax()) {
-        $html = '';
-        
-        foreach ($posts as $post) {
-            
-            $html .= view('post.lign', compact('post'))->render();
+            return response()->json(['html' => $html]);
         }
-        return response()->json(['html' => $html]);
+
+        return view('plugincmslaravel::post.index', compact('posts'));
     }
-
-    return view('plugincmslaravel::post.index', compact('posts'));
-}
-
 }
