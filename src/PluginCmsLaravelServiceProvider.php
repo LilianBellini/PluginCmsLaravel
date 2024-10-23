@@ -71,8 +71,9 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
             });
-
-        \Illuminate\Support\Facades\Route::middleware('api')
+            
+            \Illuminate\Support\Facades\Route::middleware('api')
+            ->prefix('api')  // Ajoute le préfixe 'api' à toutes les routes dans api.php
             ->namespace('Lilian\PluginCmsLaravel\Controllers')
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
