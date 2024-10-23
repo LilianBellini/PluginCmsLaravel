@@ -14,7 +14,7 @@ php artisan migrate
 php artisan plugin-cms:seed
 npm i bootstrap-icons
 
-cp -r vendor/lilian/plugincmslaravel/assets/cms public/assets
+cp -r vendor/lilian/plugincmslaravel/assets/cms public/assets/cms
 
 dans le modele app/Models/User.php : 
 
@@ -35,3 +35,7 @@ class User extends Authenticatable
 dans config/app.php, ajouter
 
     'langages' => ['fr', 'en'],
+
+dans resources/css/app.css, 
+
+@import '../../vendor/lilian/plugincmslaravel/resources/css/main.css' ;
