@@ -71,7 +71,12 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
             });
-        $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
+
+        \Illuminate\Support\Facades\Route::middleware('api')
+            ->namespace('Lilian\PluginCmsLaravel\Controllers')
+            ->group(function () {
+                $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
+            });
     }
 
     /**
