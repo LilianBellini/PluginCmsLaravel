@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Lilian\\Plugincmslaravel\\": "src/"
+            "Lilian\\PluginCmsLaravel\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Lilian\\Plugincmslaravel\\PluginCmsLaravelServiceProvider"
+                "Lilian\\PluginCmsLaravel\\PluginCmsLaravelServiceProvider"
             ]
         }
     }

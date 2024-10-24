@@ -1,6 +1,6 @@
 <?php
 
-namespace Lilian\Plugincmslaravel\Console\Commands;
+namespace Lilian\PluginCmsLaravel\Console\Commands;
 
 use Illuminate\Console\Command;
 
