@@ -96,7 +96,6 @@ class Post extends Model
             'translations' => function ($query) use ($locale) {
                 $query->where('locale', $locale);
             },
-            'comments.user'
         ])
         ->whereStatus(true)
         ->firstOrFail();
