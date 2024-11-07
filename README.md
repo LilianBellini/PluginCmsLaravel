@@ -13,8 +13,8 @@ composer require lilian/plugincmslaravel
 php artisan migrate
 php artisan plugin-cms:seed
 npm i bootstrap-icons
-
-cp -r vendor/lilian/plugincmslaravel/assets/cms public/assets/cms
+mkdir public/assets 
+cp -r vendor/lilian/plugincmslaravel/assets/cms public/assets
 
 dans le modele app/Models/User.php : 
 
