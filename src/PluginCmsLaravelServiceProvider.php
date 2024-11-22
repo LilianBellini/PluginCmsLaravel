@@ -67,14 +67,14 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
     protected function loadRoutesWithMiddleware()
     {
         \Illuminate\Support\Facades\Route::middleware('web')
-            ->namespace('Lilian\PluginCmsLaravel\Controllers')
+            ->namespace('Systemin\PluginCmsLaravel\Controllers')
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
             });
             
             \Illuminate\Support\Facades\Route::middleware('api')
             ->prefix('api')  // Ajoute le préfixe 'api' à toutes les routes dans api.php
-            ->namespace('Lilian\PluginCmsLaravel\Controllers')
+            ->namespace('Systemin\PluginCmsLaravel\Controllers')
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
             });
@@ -86,7 +86,7 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands([
-            \Lilian\PluginCmsLaravel\Console\Commands\SeedDatabaseCommand::class,
+            \Systemin\PluginCmsLaravel\Console\Commands\SeedDatabaseCommand::class,
         ]);
     }
 }
