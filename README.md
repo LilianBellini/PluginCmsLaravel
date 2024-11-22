@@ -4,17 +4,9 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 Require projet laravel / breeze 
 
-Ajouter dans le composer.json 
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@79.86.252.210:Lilian/plugincmslaravel.git"
-        }
-    ],
 
 Lancer la commande : 
-composer require lilian/plugincmslaravel
+composer require systemin/plugincmslaravel
 php artisan migrate
 php artisan plugin-cms:seed
 npm i bootstrap-icons
