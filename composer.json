@@ -1,5 +1,5 @@
 {
-    "name": "lilian/plugincmslaravel",
+    "name": "systemin/plugincmslaravel",
     "description": "A CMS plugin for Laravel",
     "type": "library",
     "require": {
@@ -10,14 +10,15 @@
         "laravel/framework": "^11.0"
     },
     "autoload": {
+        
         "psr-4": {
-            "Lilian\\PluginCmsLaravel\\": "src/"
+            "Systemin\\PluginCmsLaravel\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Lilian\\PluginCmsLaravel\\PluginCmsLaravelServiceProvider"
+                "Systemin\\PluginCmsLaravel\\PluginCmsLaravelServiceProvider"
             ]
         }
     }

@@ -1,5 +1,5 @@
 <?php
-namespace Lilian\PluginCmsLaravel\Requests\Post;
+namespace Systemin\PluginCmsLaravel\Requests\Post;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;

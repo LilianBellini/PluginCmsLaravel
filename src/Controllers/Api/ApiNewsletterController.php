@@ -1,9 +1,9 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Api;
+namespace Systemin\PluginCmsLaravel\Controllers\Api;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
-use Lilian\PluginCmsLaravel\Models\Newsletter;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Models\Newsletter;
 use Illuminate\Http\Request;
 
 class ApiNewsletterController extends Controller

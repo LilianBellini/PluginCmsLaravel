@@ -1,9 +1,9 @@
 <?php
-namespace Lilian\PluginCmsLaravel\Controllers\Admin;
+namespace Systemin\PluginCmsLaravel\Controllers\Admin;
 
-use Lilian\PluginCmsLaravel\Models\Newsletter;
+use Systemin\PluginCmsLaravel\Models\Newsletter;
 use Illuminate\Http\Request;
-use Lilian\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
 
 class NewsletterController extends Controller
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Database\Factories;
+namespace Systemin\PluginCmsLaravel\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lilian\PluginCmsLaravel\Models\User>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Systemin\PluginCmsLaravel\Models\User>
  */
 class UserFactory extends Factory
 {

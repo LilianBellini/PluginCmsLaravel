@@ -1,6 +1,6 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Models\Post; 
+namespace Systemin\PluginCmsLaravel\Models\Post; 
 
 use App\Models\User; 
 use Illuminate\Database\Eloquent\Factories\HasFactory;

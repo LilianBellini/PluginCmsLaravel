@@ -1,14 +1,14 @@
 <?php
 
-use Lilian\PluginCmsLaravel\Controllers\Auth\AuthenticatedSessionController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\ConfirmablePasswordController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\EmailVerificationNotificationController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\EmailVerificationPromptController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\NewPasswordController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\PasswordController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\PasswordResetLinkController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\RegisteredUserController;
-use Lilian\PluginCmsLaravel\Controllers\Auth\VerifyEmailController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\AuthenticatedSessionController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\ConfirmablePasswordController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\EmailVerificationNotificationController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\EmailVerificationPromptController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\NewPasswordController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\PasswordController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\PasswordResetLinkController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\RegisteredUserController;
+use Systemin\PluginCmsLaravel\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {

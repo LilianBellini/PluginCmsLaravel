@@ -1,11 +1,11 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Api\Post;
+namespace Systemin\PluginCmsLaravel\Controllers\Api\Post;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
-use Lilian\PluginCmsLaravel\Resources\Post\PostResource;
-use Lilian\PluginCmsLaravel\Models\Post\Post;
-use Lilian\PluginCmsLaravel\Traits\ApiResponse;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Resources\Post\PostResource;
+use Systemin\PluginCmsLaravel\Models\Post\Post;
+use Systemin\PluginCmsLaravel\Traits\ApiResponse;
 use Illuminate\Http\Request;
 
 class ApiPostController extends Controller

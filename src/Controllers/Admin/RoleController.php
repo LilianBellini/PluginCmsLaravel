@@ -1,9 +1,9 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Admin;
+namespace Systemin\PluginCmsLaravel\Controllers\Admin;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
-use Lilian\PluginCmsLaravel\Models\Role;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Models\Role;
 
 class RoleController extends Controller
 {

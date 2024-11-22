@@ -1,6 +1,6 @@
 <?php
 
-namespace  Lilian\PluginCmsLaravel\Middleware;
+namespace  Systemin\PluginCmsLaravel\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

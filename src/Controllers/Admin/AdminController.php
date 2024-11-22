@@ -1,8 +1,8 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Admin;
+namespace Systemin\PluginCmsLaravel\Controllers\Admin;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
 
 
 class AdminController extends Controller

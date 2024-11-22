@@ -1,6 +1,6 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Requests;
+namespace Systemin\PluginCmsLaravel\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

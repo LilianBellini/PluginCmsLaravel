@@ -1,10 +1,10 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Auth;
+namespace Systemin\PluginCmsLaravel\Controllers\Auth;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
 use App\Models\User;
-use Lilian\PluginCmsLaravel\Providers\RouteServiceProvider;
+use Systemin\PluginCmsLaravel\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

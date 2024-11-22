@@ -1,13 +1,13 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Post;
+namespace Systemin\PluginCmsLaravel\Controllers\Post;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
-use Lilian\PluginCmsLaravel\Requests\Post\PostRequest;
-use Lilian\PluginCmsLaravel\Models\Post\Category;
-use Lilian\PluginCmsLaravel\Models\Post\Post;
-use Lilian\PluginCmsLaravel\Models\Post\PostTranslation;
-use Lilian\PluginCmsLaravel\Models\Post\Tag;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Requests\Post\PostRequest;
+use Systemin\PluginCmsLaravel\Models\Post\Category;
+use Systemin\PluginCmsLaravel\Models\Post\Post;
+use Systemin\PluginCmsLaravel\Models\Post\PostTranslation;
+use Systemin\PluginCmsLaravel\Models\Post\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Storage;
@@ -55,7 +55,7 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Lilian\PluginCmsLaravel\Requests\post\PostRequest  $request
+     * @param  \Systemin\PluginCmsLaravel\Requests\post\PostRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(PostRequest $request)
@@ -113,7 +113,7 @@ class PostController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Lilian\PluginCmsLaravel\Requests\post\PostRequest  $request
+     * @param  \Systemin\PluginCmsLaravel\Requests\post\PostRequest  $request
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */

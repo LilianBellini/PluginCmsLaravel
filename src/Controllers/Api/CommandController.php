@@ -1,8 +1,8 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Api;
+namespace Systemin\PluginCmsLaravel\Controllers\Api;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 

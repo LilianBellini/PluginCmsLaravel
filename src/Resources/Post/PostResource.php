@@ -1,9 +1,9 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Resources\Post;
+namespace Systemin\PluginCmsLaravel\Resources\Post;
 
-use Lilian\PluginCmsLaravel\Resources\CommentResource;
-use Lilian\PluginCmsLaravel\Resources\UserResource;
+use Systemin\PluginCmsLaravel\Resources\CommentResource;
+use Systemin\PluginCmsLaravel\Resources\UserResource;
 use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
 

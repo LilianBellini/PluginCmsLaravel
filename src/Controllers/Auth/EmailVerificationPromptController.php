@@ -1,9 +1,9 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Controllers\Auth;
+namespace Systemin\PluginCmsLaravel\Controllers\Auth;
 
-use Lilian\PluginCmsLaravel\Controllers\Controller;
-use Lilian\PluginCmsLaravel\Providers\RouteServiceProvider;
+use Systemin\PluginCmsLaravel\Controllers\Controller;
+use Systemin\PluginCmsLaravel\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 
 class EmailVerificationPromptController extends Controller
