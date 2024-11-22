@@ -2,10 +2,10 @@
 
 namespace Systemin\PluginCmsLaravel\Traits;
 
-use Lilian\PluginCmsLaravel\Models\Post\Post;
-use Lilian\PluginCmsLaravel\Models\Post\Category;
-use Lilian\PluginCmsLaravel\Models\Post\Page;
-use Lilian\PluginCmsLaravel\Models\Role;
+use Systemin\PluginCmsLaravel\Models\Post\Post;
+use Systemin\PluginCmsLaravel\Models\Post\Category;
+use Systemin\PluginCmsLaravel\Models\Post\Page;
+use Systemin\PluginCmsLaravel\Models\Role;
 
 trait UserTrait
 {
