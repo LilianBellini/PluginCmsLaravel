@@ -1,10 +1,10 @@
 <?php
 
-namespace Lilian\Plugincmslaravel;
+namespace Systemin\PluginCmsLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use Lilian\PluginCmsLaravel\Middleware\RoleAdmin;
-use Lilian\PluginCmsLaravel\Middleware\RoleEditor;
+use Systemin\PluginCmsLaravel\Middleware\RoleAdmin;
+use Systemin\PluginCmsLaravel\Middleware\RoleEditor;
 use Illuminate\Support\Facades\Blade;
 
 class PluginCmsLaravelServiceProvider extends ServiceProvider

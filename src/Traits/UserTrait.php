@@ -1,6 +1,6 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Traits;
+namespace Systemin\PluginCmsLaravel\Traits;
 
 use Lilian\PluginCmsLaravel\Models\Post\Post;
 use Lilian\PluginCmsLaravel\Models\Post\Category;

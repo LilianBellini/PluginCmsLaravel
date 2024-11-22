@@ -1,9 +1,9 @@
 <?php
 
-use Lilian\PluginCmsLaravel\Controllers\Admin\NewsletterController;
-use Lilian\PluginCmsLaravel\Controllers\Admin\RoleController;
-use Lilian\PluginCmsLaravel\Controllers\Admin\SettingController;
-use Lilian\PluginCmsLaravel\Controllers\Admin\UserController;
+use Systemin\PluginCmsLaravel\Controllers\Admin\NewsletterController;
+use Systemin\PluginCmsLaravel\Controllers\Admin\RoleController;
+use Systemin\PluginCmsLaravel\Controllers\Admin\SettingController;
+use Systemin\PluginCmsLaravel\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 
