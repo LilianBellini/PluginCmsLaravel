@@ -1,13 +1,13 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Database\Seeders;
+namespace Systemin\PluginCmsLaravel\Database\Seeders;
 
 
 use App\Models\User;
-use Lilian\PluginCmsLaravel\Models\Setting;
-use Lilian\PluginCmsLaravel\Database\Seeders\TagSeeder;
-use Lilian\PluginCmsLaravel\Database\Seeders\CategorySeeder;
-use Lilian\PluginCmsLaravel\Database\Seeders\PostSeeder;
+use Systemin\PluginCmsLaravel\Models\Setting;
+use Systemin\PluginCmsLaravel\Database\Seeders\TagSeeder;
+use Systemin\PluginCmsLaravel\Database\Seeders\CategorySeeder;
+use Systemin\PluginCmsLaravel\Database\Seeders\PostSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,10 +22,10 @@ class DatabaseSeeder extends Seeder
         // Create a specific user with a given email
         if (config('app.env') == "local"){
             User::create([
-                'name' => 'Lilian',
+                'name' => 'Systemin',
                 'role_id' => 1,
-                'email' => 'lilian@systemin.fr', // Remplis ce champ avec l'adresse email souhaitée
-                'password' => bcrypt('lilian@systemin.fr'), // Assure-toi de définir un mot de passe sécurisé
+                'email' => 'Systemin@systemin.fr', // Remplis ce champ avec l'adresse email souhaitée
+                'password' => bcrypt('Systemin@systemin.fr'), // Assure-toi de définir un mot de passe sécurisé
             ]);
             User::create([
                 'name' => 'Nico',

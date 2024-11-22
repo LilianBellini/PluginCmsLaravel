@@ -1,10 +1,10 @@
 <?php
 
-namespace Lilian\PluginCmsLaravel\Database\Seeders;
+namespace Systemin\PluginCmsLaravel\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Lilian\PluginCmsLaravel\Models\Post\Category;
-use Lilian\PluginCmsLaravel\Models\Post\CategoryTranslation;
+use Systemin\PluginCmsLaravel\Models\Post\Category;
+use Systemin\PluginCmsLaravel\Models\Post\CategoryTranslation;
 
 
 class CategorySeeder extends Seeder
