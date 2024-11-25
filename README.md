@@ -1,38 +1,77 @@
+# Plugin CMS Laravel
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
-Require projet laravel / breeze 
+---
 
+## Requirements
 
-Lancer la commande : 
-composer require systemin/plugincmslaravel
-php artisan migrate
-php artisan plugin-cms:seed
-npm i bootstrap-icons
-mkdir public/assets 
-cp -r vendor/lilian/plugincmslaravel/assets/cms public/assets
+- Laravel project
+- Laravel Breeze for authentication
 
-dans le modele app/Models/User.php : 
+---
 
-use Lilian\PluginCmsLaravel\Traits\UserTrait; // Importation du trait
+## Installation Steps
+
+1. Add the package to your project:
+   composer require systemin/plugincmslaravel
+
+2. Run the database migrations:
+   php artisan migrate
+
+3. Seed the initial data for the CMS:
+   php artisan plugin-cms:seed
+
+4. Install Bootstrap Icons:
+   npm i bootstrap-icons
+
+5. Create a public directory for CMS assets:
+   mkdir public/assets
+
+6. Copy the CMS assets to the public directory:
+   cp -r vendor/systemin/plugincmslaravel/assets/cms public/assets
+
+---
+
+## Configuration Steps
+
+### User Model
+
+In your `app/Models/User.php`, add the `UserTrait`:
+
+use Systemin\PluginCmsLaravel\Traits\UserTrait; // Import the trait
 
 class User extends Authenticatable
 {
-    use UserTrait; // Inclusion du trait
+    use UserTrait; // Include the trait
 
-    et dans le fillable: 
+    // Add the following attributes to the fillable array:
+    protected $fillable = [
         'role_id',
         'avatar',
         'bio',
-
-    // Le reste de ton modèle User
+        // Other attributes
+    ];
 }
 
-dans config/app.php, ajouter
+---
 
-    'langages' => ['fr', 'en'],
+### App Configuration
 
-dans resources/css/app.css, 
+In the `config/app.php` file, add the following:
 
-@import '../../vendor/lilian/plugincmslaravel/resources/css/main.css' ;
+'langages' => ['fr', 'en'],
+
+---
+
+### CSS Setup
+
+In your `resources/css/app.css` file, import the CMS styles:
+
+@import '../../vendor/systemin/plugincmslaravel/resources/css/main.css';
+
+---
+
+Follow these steps to fully integrate the CMS into your Laravel project.
