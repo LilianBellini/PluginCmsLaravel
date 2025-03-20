@@ -13,7 +13,7 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'user_id' => 1,
+                'user_id' => 0,
                 'translations' => [
                     'fr' => [
                         'name' => 'Actualités de la marque',
@@ -26,7 +26,7 @@ class CategorySeeder extends Seeder
                 ],
             ],
             [
-                'user_id' => 1,
+                'user_id' => 0,
                 'translations' => [
                     'fr' => [
                         'name' => 'Nouveautés Falcon',
@@ -39,7 +39,7 @@ class CategorySeeder extends Seeder
                 ],
             ],
             [
-                'user_id' => 1,
+                'user_id' => 0,
                 'translations' => [
                     'fr' => [
                         'name' => 'Régates',
@@ -52,7 +52,7 @@ class CategorySeeder extends Seeder
                 ],
             ],
             [
-                'user_id' => 1,
+                'user_id' => 0,
                 'translations' => [
                     'fr' => [
                         'name' => 'Divers',
