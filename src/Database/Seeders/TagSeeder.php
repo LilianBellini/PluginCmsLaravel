@@ -1,10 +1,10 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Database\Seeders;
+namespace LilianBellini\PluginCmsLaravel\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Systemin\PluginCmsLaravel\Models\Post\Tag;
-use Systemin\PluginCmsLaravel\Models\Post\TagTranslation;
+use LilianBellini\PluginCmsLaravel\Models\Post\Tag;
+use LilianBellini\PluginCmsLaravel\Models\Post\TagTranslation;
 
 class TagSeeder extends Seeder
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Providers;
+namespace LilianBellini\PluginCmsLaravel\Providers;
 
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\ServiceProvider;

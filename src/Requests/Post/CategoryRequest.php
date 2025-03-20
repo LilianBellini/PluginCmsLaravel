@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Requests\Post;
+namespace LilianBellini\PluginCmsLaravel\Requests\Post;
 
 use App\Rules\Authcheck;
 use Illuminate\Foundation\Http\FormRequest;

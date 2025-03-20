@@ -1,10 +1,10 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Controllers\Post;
+namespace LilianBellini\PluginCmsLaravel\Controllers\Post;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Requests\Post\CategoryRequest;
-use Systemin\PluginCmsLaravel\Models\Post\Category;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Requests\Post\CategoryRequest;
+use LilianBellini\PluginCmsLaravel\Models\Post\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller

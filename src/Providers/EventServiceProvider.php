@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Providers;
+namespace LilianBellini\PluginCmsLaravel\Providers;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;

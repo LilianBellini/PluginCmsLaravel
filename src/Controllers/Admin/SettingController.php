@@ -1,10 +1,10 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Controllers\Admin;
+namespace LilianBellini\PluginCmsLaravel\Controllers\Admin;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Requests\Admin\UpdateSettingRequest;
-use Systemin\PluginCmsLaravel\Models\Setting;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Requests\Admin\UpdateSettingRequest;
+use LilianBellini\PluginCmsLaravel\Models\Setting;
 
 class SettingController extends Controller
 {

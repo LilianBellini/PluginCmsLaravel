@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Console\Commands;
+namespace LilianBellini\PluginCmsLaravel\Console\Commands;
 
 use Illuminate\Console\Command;
 
@@ -11,7 +11,7 @@ class SeedDatabaseCommand extends Command
 
     public function handle()
     {
-        $this->call('db:seed', ['--class' => 'Systemin\\PluginCmsLaravel\\Database\\Seeders\\DatabaseSeeder']);
+        $this->call('db:seed', ['--class' => 'LilianBellini\\PluginCmsLaravel\\Database\\Seeders\\DatabaseSeeder']);
         $this->info('Database seeded with PluginCmsLaravel data.');
     }
 }

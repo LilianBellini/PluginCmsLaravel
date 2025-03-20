@@ -1,10 +1,10 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel;
+namespace LilianBellini\PluginCmsLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use Systemin\PluginCmsLaravel\Middleware\RoleAdmin;
-use Systemin\PluginCmsLaravel\Middleware\RoleEditor;
+use LilianBellini\PluginCmsLaravel\Middleware\RoleAdmin;
+use LilianBellini\PluginCmsLaravel\Middleware\RoleEditor;
 use Illuminate\Support\Facades\Blade;
 
 class PluginCmsLaravelServiceProvider extends ServiceProvider
@@ -67,14 +67,14 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
     protected function loadRoutesWithMiddleware()
     {
         \Illuminate\Support\Facades\Route::middleware('web')
-            ->namespace('Systemin\PluginCmsLaravel\Controllers')
+            ->namespace('LilianBellini\PluginCmsLaravel\Controllers')
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
             });
             
             \Illuminate\Support\Facades\Route::middleware('api')
             ->prefix('api')  // Ajoute le préfixe 'api' à toutes les routes dans api.php
-            ->namespace('Systemin\PluginCmsLaravel\Controllers')
+            ->namespace('LilianBellini\PluginCmsLaravel\Controllers')
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
             });
@@ -86,7 +86,7 @@ class PluginCmsLaravelServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands([
-            \Systemin\PluginCmsLaravel\Console\Commands\SeedDatabaseCommand::class,
+            \LilianBellini\PluginCmsLaravel\Console\Commands\SeedDatabaseCommand::class,
         ]);
     }
 }

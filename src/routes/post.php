@@ -1,9 +1,9 @@
 <?php
 
-use Systemin\PluginCmsLaravel\Controllers\Post\CategoryController;
-use Systemin\PluginCmsLaravel\Controllers\Post\PageController;
-use Systemin\PluginCmsLaravel\Controllers\Post\PostController;
-use Systemin\PluginCmsLaravel\Controllers\Post\TagController;
+use LilianBellini\PluginCmsLaravel\Controllers\Post\CategoryController;
+use LilianBellini\PluginCmsLaravel\Controllers\Post\PageController;
+use LilianBellini\PluginCmsLaravel\Controllers\Post\PostController;
+use LilianBellini\PluginCmsLaravel\Controllers\Post\TagController;
 use Illuminate\Support\Facades\Route;
 
 

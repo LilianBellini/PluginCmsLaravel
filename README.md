@@ -41,7 +41,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 In your `app/Models/User.php`, add the `UserTrait`:
 
-use Systemin\PluginCmsLaravel\Traits\UserTrait; // Import the trait
+use LilianBellini\PluginCmsLaravel\Traits\UserTrait; // Import the trait
 
 class User extends Authenticatable
 {

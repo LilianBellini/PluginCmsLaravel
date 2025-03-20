@@ -1,13 +1,13 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Controllers;
+namespace LilianBellini\PluginCmsLaravel\Controllers;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Requests\ProfileUpdateRequest;
-use Systemin\PluginCmsLaravel\Models\Post\Category;
-use Systemin\PluginCmsLaravel\Models\Newsletter;
-use Systemin\PluginCmsLaravel\Models\Post\Post;
-use Systemin\PluginCmsLaravel\Models\Post\Tag;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Requests\ProfileUpdateRequest;
+use LilianBellini\PluginCmsLaravel\Models\Post\Category;
+use LilianBellini\PluginCmsLaravel\Models\Newsletter;
+use LilianBellini\PluginCmsLaravel\Models\Post\Post;
+use LilianBellini\PluginCmsLaravel\Models\Post\Tag;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Database\Seeders;
+namespace LilianBellini\PluginCmsLaravel\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Systemin\PluginCmsLaravel\Models\Post\Post;
-use Systemin\PluginCmsLaravel\Models\Post\PostTranslation;
-use Systemin\PluginCmsLaravel\Models\Post\Tag;
+use LilianBellini\PluginCmsLaravel\Models\Post\Post;
+use LilianBellini\PluginCmsLaravel\Models\Post\PostTranslation;
+use LilianBellini\PluginCmsLaravel\Models\Post\Tag;
 use Illuminate\Support\Str;
 
 class PostSeeder extends Seeder

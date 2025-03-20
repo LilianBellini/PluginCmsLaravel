@@ -1,9 +1,9 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Database\Factories;
+namespace LilianBellini\PluginCmsLaravel\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Systemin\PluginCmsLaravel\Models\Setting;
+use LilianBellini\PluginCmsLaravel\Models\Setting;
 
 class SettingFactory extends Factory
 {

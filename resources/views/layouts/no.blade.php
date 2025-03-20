@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>@yield('title') | Systemin</title>
+	<title>@yield('title') | LilianBellini</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">

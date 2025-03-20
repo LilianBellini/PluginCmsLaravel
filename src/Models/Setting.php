@@ -1,10 +1,10 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Models ; 
+namespace LilianBellini\PluginCmsLaravel\Models ; 
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Systemin\PluginCmsLaravel\Database\Factories\SettingFactory;
+use LilianBellini\PluginCmsLaravel\Database\Factories\SettingFactory;
 
 
 class Setting extends Model

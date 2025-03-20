@@ -1,10 +1,10 @@
 <?php
-namespace Systemin\PluginCmsLaravel\Controllers\Post;
+namespace LilianBellini\PluginCmsLaravel\Controllers\Post;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Requests\Post\PageRequest;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Requests\Post\PageRequest;
 use Illuminate\Http\Request;
-use Systemin\PluginCmsLaravel\Models\Post\Page;
+use LilianBellini\PluginCmsLaravel\Models\Post\Page;
 
 class PageController extends Controller
 {

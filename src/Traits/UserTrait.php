@@ -1,11 +1,11 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Traits;
+namespace LilianBellini\PluginCmsLaravel\Traits;
 
-use Systemin\PluginCmsLaravel\Models\Post\Post;
-use Systemin\PluginCmsLaravel\Models\Post\Category;
-use Systemin\PluginCmsLaravel\Models\Post\Page;
-use Systemin\PluginCmsLaravel\Models\Role;
+use LilianBellini\PluginCmsLaravel\Models\Post\Post;
+use LilianBellini\PluginCmsLaravel\Models\Post\Category;
+use LilianBellini\PluginCmsLaravel\Models\Post\Page;
+use LilianBellini\PluginCmsLaravel\Models\Role;
 
 trait UserTrait
 {

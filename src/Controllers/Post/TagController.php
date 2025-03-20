@@ -1,10 +1,10 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Controllers\Post;
+namespace LilianBellini\PluginCmsLaravel\Controllers\Post;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Requests\Post\TagRequest;
-use Systemin\PluginCmsLaravel\Models\Post\Tag;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Requests\Post\TagRequest;
+use LilianBellini\PluginCmsLaravel\Models\Post\Tag;
 
 class TagController extends Controller
 {

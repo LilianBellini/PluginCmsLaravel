@@ -5,7 +5,7 @@
             <!--begin::Copyright-->
             <div class="text-gray-900 order-2 order-md-1">
                 <span class="text-muted fw-semibold me-1">&copy;</span>
-                <a href="https://systemin.fr/" target="_blank" class="text-gray-800 text-hover-primary">Systemin | <i>ContentManager v1.0.0</i></a>
+                <a href="https://systemin.fr/" target="_blank" class="text-gray-800 text-hover-primary">LilianBellini | <i>ContentManager v1.0.0</i></a>
             </div>
             <!--end::Copyright-->
             <!--begin::Menu-->

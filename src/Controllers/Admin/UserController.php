@@ -1,9 +1,9 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Controllers\Admin;
+namespace LilianBellini\PluginCmsLaravel\Controllers\Admin;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Models\Role;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;

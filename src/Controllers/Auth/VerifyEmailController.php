@@ -1,9 +1,9 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Controllers\Auth;
+namespace LilianBellini\PluginCmsLaravel\Controllers\Auth;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Providers\RouteServiceProvider;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 

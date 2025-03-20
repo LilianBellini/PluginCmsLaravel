@@ -1,11 +1,11 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Controllers\Api\Post;
+namespace LilianBellini\PluginCmsLaravel\Controllers\Api\Post;
 
-use Systemin\PluginCmsLaravel\Controllers\Controller;
-use Systemin\PluginCmsLaravel\Resources\Post\CategoryResource;
-use Systemin\PluginCmsLaravel\Models\Post\Category;
-use Systemin\PluginCmsLaravel\Traits\ApiResponse;
+use LilianBellini\PluginCmsLaravel\Controllers\Controller;
+use LilianBellini\PluginCmsLaravel\Resources\Post\CategoryResource;
+use LilianBellini\PluginCmsLaravel\Models\Post\Category;
+use LilianBellini\PluginCmsLaravel\Traits\ApiResponse;
 
 class ApiCategoryController extends Controller
 {

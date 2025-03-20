@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Traits;
+namespace LilianBellini\PluginCmsLaravel\Traits;
 
 use Illuminate\Http\Response;
 

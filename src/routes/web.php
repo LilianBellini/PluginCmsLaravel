@@ -1,6 +1,6 @@
 <?php
 
-use Systemin\PluginCmsLaravel\Controllers\ProfileController;
+use LilianBellini\PluginCmsLaravel\Controllers\ProfileController;
 
 use Illuminate\Support\Facades\Route;
 

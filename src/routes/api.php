@@ -1,9 +1,9 @@
 <?php
 
-use Systemin\PluginCmsLaravel\Controllers\Api\Post\ApiCategoryController;
-use Systemin\PluginCmsLaravel\Controllers\Api\ApiNewsletterController;
-use Systemin\PluginCmsLaravel\Controllers\Api\Post\ApiPostController;
-use Systemin\PluginCmsLaravel\Controllers\Api\CommandController;
+use LilianBellini\PluginCmsLaravel\Controllers\Api\Post\ApiCategoryController;
+use LilianBellini\PluginCmsLaravel\Controllers\Api\ApiNewsletterController;
+use LilianBellini\PluginCmsLaravel\Controllers\Api\Post\ApiPostController;
+use LilianBellini\PluginCmsLaravel\Controllers\Api\CommandController;
 use Illuminate\Support\Facades\Route;
 
 

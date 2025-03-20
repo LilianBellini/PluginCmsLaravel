@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\PluginCmsLaravel\Resources;
+namespace LilianBellini\PluginCmsLaravel\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
