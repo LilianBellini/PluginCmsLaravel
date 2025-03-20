@@ -20,13 +20,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // Create a specific user with a given email
-        User::create([
-            'name' => 'Lilian BELLINI',
-            'role_id' => 1,
-            'email' => 'lilian@flowpi.fr', // Remplis ce champ avec l'adresse email souhaitée
-            'password' => bcrypt('lilian@flowpi.fr'), // Assure-toi de définir un mot de passe sécurisé
-        ]);
-
+        if (config('app.env') == "local"){
+            User::create([
+                'name' => 'Lilian BELLINI',
+                'role_id' => 1,
+                'email' => 'lilian@flowpi.fr', // Remplis ce champ avec l'adresse email souhaitée
+                'password' => bcrypt('lilian@flowpi.fr'), // Assure-toi de définir un mot de passe sécurisé
+            ]);
+        }
         Setting::factory(1)->create();
 
         $this->call([
