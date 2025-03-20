@@ -1,5 +1,5 @@
 {
-    "name": "systemin/plugincmslaravel",
+    "name": "lilianbellini/plugincmslaravel",
     "description": "A CMS plugin for Laravel",
     "type": "library",
     "require": {
@@ -10,16 +10,23 @@
         "laravel/framework": "^11.0"
     },
     "autoload": {
-        
         "psr-4": {
-            "Systemin\\PluginCmsLaravel\\": "src/"
+            "LilianBellini\\PluginCmsLaravel\\": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:LilianBellini/PluginCmsLaravel.git"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
-                "Systemin\\PluginCmsLaravel\\PluginCmsLaravelServiceProvider"
+                "LilianBellini\\PluginCmsLaravel\\PluginCmsLaravelServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
