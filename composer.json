@@ -2,6 +2,13 @@
     "name": "lilianbellini/plugincmslaravel",
     "description": "A CMS plugin for Laravel",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lilian Bellini",
+            "email": "lilian@flowpi.fr"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "laravel/sanctum": "^4.0"
