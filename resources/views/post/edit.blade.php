@@ -199,8 +199,7 @@
                                                         <label class="form-label required">Contenu</label>
                                                         <div>
                                                             <div id="content_{{ $locale }}"
-                                                                data-content="{{ old('translations.' . $locale . '.content', $translation ? $translation->content : '') }}">
-                                                            </div>
+                                                                data-content="{{ e(old('translations.' . $locale . '.content', $translation ? $translation->content : '')) }}">                                                            </div>
                                                             <textarea name="translations[{{ $locale }}][content]" id="textarea_{{ $locale }}"
                                                                 style="display:none;" ></textarea>
                                                             <div id="editor_{{ $locale }}" style="min-height: 300px;"></div>
