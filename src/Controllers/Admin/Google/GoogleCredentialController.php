@@ -20,7 +20,7 @@ class GoogleCredentialController extends Controller
     {
         $credentials = GoogleApiCredential::first();
     
-        return view('admin.google.edit', compact('credentials'));
+        return view('plugincmslaravel::admin.google.edit', compact('credentials'));
     }
 
     public function update(Request $request)
@@ -45,16 +45,5 @@ class GoogleCredentialController extends Controller
         $this->searchConsole->handleCallback($request->code);
 
         return redirect()->back()->with('success', 'Connexion réussie à Google Search Console');
-    }
-
-    public function fetchSearchAnalytics()
-    {
-        $data = $this->searchConsole->getSearchOpportunities(
-            'sc-domain:flowpi.fr', // Remplace par ton domaine exact (https inclus)
-            now()->subMonth()->toDateString(),
-            now()->toDateString()
-        );
-        dd($data);
-        return view('google.analytics', compact('data'));
     }
 }
