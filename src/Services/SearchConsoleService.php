@@ -5,7 +5,7 @@ namespace LilianBellini\PluginCmsLaravel\Services;
 use Google_Client;
 use Google_Service_Webmasters;
 use Google_Service_Webmasters_SearchAnalyticsQueryRequest;
-use App\Models\GoogleApiCredential;
+use LilianBellini\PluginCmsLaravel\Models\Admin\Google\GoogleApiCredential;
 
 class SearchConsoleService
 {
@@ -17,7 +17,7 @@ class SearchConsoleService
         $this->client = new Google_Client();
         $this->client->setClientId($credentials->client_id);
         $this->client->setClientSecret($credentials->client_secret);
-        $this->client->setRedirectUri($credentials->redirect_uri);
+        $this->client->setRedirectUri(config('app.url') . '/google/callback');
         $this->client->setAccessType('offline');
         $this->client->setPrompt('consent');
 

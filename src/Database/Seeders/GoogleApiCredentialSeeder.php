@@ -3,7 +3,7 @@
 namespace LilianBellini\PluginCmsLaravel\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\GoogleApiCredential;
+use LilianBellini\PluginCmsLaravel\Models\Admin\Google\GoogleApiCredential;
 
 class GoogleApiCredentialSeeder extends Seeder
 {
@@ -12,7 +12,6 @@ class GoogleApiCredentialSeeder extends Seeder
         GoogleApiCredential::firstOrCreate([], [
             'client_id'     => '',
             'client_secret' => '',
-            'redirect_uri'  => '',
             'site_url'      => '',
             'site_post_url' => '',
             'token'         => null,
