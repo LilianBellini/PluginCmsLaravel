@@ -11,7 +11,9 @@
     ],
     "require": {
         "php": "^8.2",
-        "laravel/sanctum": "^4.0"
+        "laravel/sanctum": "^4.0",
+        "openai-php/laravel": "^0.10.2",
+        "google/apiclient": "^2.18"
     },
     "require-dev": {
         "laravel/framework": "^11.0"
@@ -35,5 +37,10 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
 }
