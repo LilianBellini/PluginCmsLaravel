@@ -4,6 +4,8 @@ namespace LilianBellini\PluginCmsLaravel\Database\Seeders;
 
 
 use App\Models\User;
+use LilianBellini\PluginCmsLaravel\Database\Seeders\GoogleApiCredentialSeeder;
+use LilianBellini\PluginCmsLaravel\Database\Seeders\SeoProfileSeeder;
 use LilianBellini\PluginCmsLaravel\Models\Setting;
 use LilianBellini\PluginCmsLaravel\Database\Seeders\TagSeeder;
 use LilianBellini\PluginCmsLaravel\Database\Seeders\CategorySeeder;
@@ -34,6 +36,8 @@ class DatabaseSeeder extends Seeder
             TagSeeder::class,
             CategorySeeder::class,
             PostSeeder::class,
+            SeoProfileSeeder::class,
+            GoogleApiCredentialSeeder::class,
         ]);
     }
 }
