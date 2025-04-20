@@ -28,7 +28,6 @@ class GoogleCredentialController extends Controller
         $request->validate([
             'client_id' => 'required|string',
             'client_secret' => 'required|string',
-            'redirect_uri' => 'required',
             'site_url' => 'required',
         ]);
 

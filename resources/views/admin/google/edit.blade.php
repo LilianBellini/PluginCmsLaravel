@@ -50,16 +50,6 @@
                             </div>
 
                             <div class="row mb-6">
-                                <label for="redirect_uri" class="col-lg-4 col-form-label required fw-semibold fs-6">
-                                    Redirect URI
-                                </label>
-                                <div class="col-lg-8 fv-row">
-                                    <input type="url" id="redirect_uri" name="redirect_uri"
-                                        class="form-control form-control-lg form-control-solid" placeholder="https://..."
-                                        value="{{ old('redirect_uri', $credentials->redirect_uri ?? '') }}" required>
-                                </div>
-                            </div>
-                            <div class="row mb-6">
                                 <label for="site_url" class="col-lg-4 col-form-label required fw-semibold fs-6">
                                     Lien du site (sans https://) 
                                 </label>
