@@ -5,6 +5,7 @@ namespace LilianBellini\PluginCmsLaravel\Services\Builder;
 use Illuminate\Support\Str;
 use LilianBellini\PluginCmsLaravel\Models\Post\Post;
 use LilianBellini\PluginCmsLaravel\Models\Post\PostTranslation;
+use LilianBellini\PluginCmsLaravel\Models\Admin\Seo\SeoProfile;
 use Illuminate\Support\Facades\Storage;
 use OpenAI\Laravel\Facades\OpenAI;
 
@@ -97,7 +98,7 @@ class PostBuilderService
     public function generateImageForArticle(string $title): ?string
     {
         // On récupère le prompt personnalisé depuis le profil SEO
-        $stylePrompt = \App\Models\SeoProfile::first()?->image_style_prompt
+        $stylePrompt = SeoProfile::first()?->image_style_prompt
             ?? "Style moderne, épuré, adapté à un site B2B tech.";
 
         // Génère l'image avec OpenAI
