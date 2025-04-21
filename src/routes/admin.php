@@ -7,6 +7,9 @@ use LilianBellini\PluginCmsLaravel\Controllers\Admin\UserController;
 use LilianBellini\PluginCmsLaravel\Controllers\Admin\Seo\SeoProfileController;
 use LilianBellini\PluginCmsLaravel\Controllers\Admin\Google\GoogleCredentialController;
 use LilianBellini\PluginCmsLaravel\Controllers\Admin\ArticleGenerationController;
+use LilianBellini\PluginCmsLaravel\Controllers\CityController;
+use LilianBellini\PluginCmsLaravel\Controllers\SectorController;
+use LilianBellini\PluginCmsLaravel\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -34,6 +37,12 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('/admin')->group(fu
 
     Route::get('generate/news', [ArticleGenerationController::class, 'generateNews'])
         ->name('generate.news');
+
+
+    Route::resource('city', CityController::class)->names('page.city')->except(['show']);
+    Route::resource('sector', SectorController::class)->names('page.sector')->except(['show']); 
+    Route::resource('page', PageController::class)->names('page')->except(['show']); 
+
 });
 
 Route::get('/google/callback', action: [GoogleCredentialController::class, 'handleGoogleCallback'])->name('google.callback');

@@ -13,7 +13,6 @@ class GoogleApiCredentialSeeder extends Seeder
             'client_id'     => '',
             'client_secret' => '',
             'site_url'      => '',
-            'site_post_url' => '',
             'token'         => null,
             'email'         => null,
         ]);
